@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============= common ============= */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+/* ============= header============= */
+
+.header {
+  background-color: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.header .nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+  padding: 8px 21px;
+}
+
+.nav a:hover,
+.nav li.active a {
+  /* font-weight: 600;  Nếu vầy thì khi hover, text to lên khiến vỡ khung, nên sử dụng kĩ thuật text-shadow*/
+  text-shadow: 1px 0 0 currentColor;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #171100;
+  position: relative;
+}
+
+.nav li.active a::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  background: #171100;
+  border-radius: 1px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+.header .sign-up-btn {
+  min-width: 144px;
+  padding: 11px 41px;
+}
