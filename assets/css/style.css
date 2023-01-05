@@ -23,6 +23,20 @@ body {
   margin-right: auto;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
 a {
   text-decoration: none;
 }
@@ -353,6 +367,7 @@ a {
   font-size: 1.8rem;
   line-height: 1.67;
   color: #171100;
+  padding-right: 6px;
 }
 
 .popular .rating .value {
