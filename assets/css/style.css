@@ -29,13 +29,16 @@ a {
 
 .btn {
   display: inline-block;
+  padding: 0 16px;
   min-width: 118px;
+  line-height: 50px;
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
   color: #ffffff;
   background: #171100;
   border-radius: 999px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -119,7 +122,6 @@ a {
 }
 .header .sign-up-btn {
   min-width: 144px;
-  padding: 11px 41px;
 }
 
 /* ============= hero============= */
@@ -307,4 +309,82 @@ a {
 .popular .control-btn:hover {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+.popular .course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.popular .course-item {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+}
+.popular .course-item:hover {
+  border-color: transparent;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+  width: calc(100% + 2px);
+  height: 278px;
+  margin: -1px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+
+.popular .course-item .rating,
+.popular .course-item .head,
+.popular .course-item .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular .course-item .title a {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.popular .rating .value {
+  margin-left: 6px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fea31b;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+
+.popular .course-item .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.popular .course-item .book-btn {
+  border: none;
+}
+
+.popular .course-item .book-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
 }
